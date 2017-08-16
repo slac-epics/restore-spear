@@ -1,0 +1,20 @@
+TOP=../../../..
+include $(TOP)/config/CONFIG_APP
+
+INC += dbRestore.h
+
+#SRCS.c  += ../dbRestoreServer.c
+SRCS.c  += ../dbRestore.c
+SRCS.c  += ../restoreLib.c
+SRCS.c  += ../restoreSockLib.c
+SRCS.c  += ../restoreFileLib.c
+
+#LIBOBJS  += dbRestoreServer.o
+LIBOBJS  += dbRestore.o
+LIBOBJS  += restoreLib.o
+LIBOBJS  += restoreSockLib.o
+LIBOBJS  += restoreFileLib.o
+
+LIBNAME = restoreLib
+
+include $(TOP)/config/RULES.Vx
