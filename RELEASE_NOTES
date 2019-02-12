@@ -1,6 +1,10 @@
 Release Notes for the setpoint restore package
 ----------------------------------------------
 
+R1.0.2-0.0.2  S. Condamoor 12-Feb-2019
+    Build with base R3.15.5-1.1
+	Using configure/RELEASE_R3.15.5-1.1
+
 R1.0.2-0.0.1  M. Dunning 26-Apr-2018
     Build with base R3.15.5-1.0.13
 
