@@ -1,6 +1,10 @@
 Release Notes for the setpoint restore package
 ----------------------------------------------
 
+R1.0.2-0.0.3  S. Condamoor 15-Jul-2019
+	Create separate configure/RELEASE_R3.15.5-1.0 for R3.15.5-1.0 builds.
+	Setup configure/RELEASE as soft link pointing to either RELEASE_R3.15.5-1.0 or RELEASE_R3.15.5-1.1
+	
 R1.0.2-0.0.2  S. Condamoor 12-Feb-2019
     Build with base R3.15.5-1.1
 	Using configure/RELEASE_R3.15.5-1.1
