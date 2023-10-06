@@ -320,6 +320,7 @@ int restoreExit(restoreType type, void *rObjp)
     fclose(outp->outFd);
 #ifndef vxWorks
   #ifdef __rtems__
+    remove(outp->buFile);   
     copyStatus = cp(outp->outFile, outp->buFile);
     remove(outp->outFile);	
   #else
