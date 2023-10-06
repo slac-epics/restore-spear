@@ -319,8 +319,13 @@ int restoreExit(restoreType type, void *rObjp)
     
     fclose(outp->outFd);
 #ifndef vxWorks
-    remove(outp->buFile);
+  #ifdef __rtems__
+    copyStatus = cp(outp->outFile, outp->buFile);
+    remove(outp->outFile);	
+  #else
+    remove(outp->buFile); 
     copyStatus = rename(outp->outFile, outp->buFile);
+  #endif
 #else
     /*
      * Use copy for vxWorks - rename doesn't work due to
