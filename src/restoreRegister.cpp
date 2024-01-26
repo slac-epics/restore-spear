@@ -9,7 +9,7 @@
 #include "iocsh.h"
 #include "dbRestore.h"
 #include "epicsVersion.h"
-#if EPICS_VERSION >= 3 && EPICS_REVISION >= 14 && EPICS_MODIFICATION > 4
+#if (EPICS_VERSION >= 7) || (EPICS_VERSION >= 3 && EPICS_REVISION >= 14 && EPICS_MODIFICATION > 4)
 #include "epicsExport.h"
 #endif
 
@@ -79,7 +79,7 @@ void restore_Register() {
 	iocshRegister(&dbRestoreFileDef   , dbRestoreFileCall);
         initHookRegister(dbRestoreInitHook);
 }
-#if EPICS_VERSION >= 3 && EPICS_REVISION >= 14 && EPICS_MODIFICATION > 4
+#if (EPICS_VERSION >= 7) || (EPICS_VERSION >= 3 && EPICS_REVISION >= 14 && EPICS_MODIFICATION > 4)
 epicsExportRegistrar(restore_Register);
 #endif
 #ifdef __cplusplus
