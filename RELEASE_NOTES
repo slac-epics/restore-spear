@@ -1,6 +1,10 @@
 Release Notes for the setpoint restore package
 ----------------------------------------------
 
+R1.0.2-1.0.0  S. Condamoor 30-Aug-2024
+    Branch epics-7-sdf
+    Build with base 7.0.3.1-1.0 and sdf. 
+    
 R1.0.2-0.0.5  M. Dunning 17-Oct-2023
     Modify preprocessor directive in restoreLib.h for base >= 7.  Now builds with base 7.0.3.
 
